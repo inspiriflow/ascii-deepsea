@@ -1,0 +1,23 @@
+{
+  "name": "ascii-deepsea",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "check": "esbuild check.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/check.mjs && node node_modules/.cache/check.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0"
+  },
+  "description": "A living deep-sea aquarium drawn in ASCII: 20 kinds of marine life with behaviour engines.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inspiriflow/ascii-deepsea.git"
+  }
+}

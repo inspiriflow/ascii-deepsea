@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+.claude
+# Full-size screen recordings; the README uses the web-sized copy in assets/
+/ascii-deepsea-*.gif
