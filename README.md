@@ -92,6 +92,19 @@ otherwise                 → "crawling" / "foraging with its arms"
 
 ## 🚀 Quick start
 
+**Chrome extension (no setup)**
+
+There's a Chrome extension that puts the ocean on every new tab. Download it and play with it yourself:
+
+1. Download [`ascii-deepsea-extension.zip`](https://github.com/inspiriflow/ascii-deepsea/releases/latest/download/ascii-deepsea-extension.zip) from [Releases](https://github.com/inspiriflow/ascii-deepsea/releases/latest) and unzip it.
+2. Open `chrome://extensions` and turn on **Developer mode** (top right).
+3. Click **Load unpacked** and choose the unzipped folder.
+4. Open a new tab. If Chrome asks *"Change back to Google?"*, choose **Keep it**.
+
+It runs fully offline (the font is bundled, nothing is fetched from the network) and works in any Chromium browser: Chrome, Edge, Brave, Arc.
+
+**Run it locally**
+
 ```bash
 git clone https://github.com/inspiriflow/ascii-deepsea.git
 cd ascii-deepsea
@@ -100,6 +113,12 @@ npm run dev
 ```
 
 Open the local URL Vite prints, hover an animal to see what it's doing, and click to startle the fish.
+
+**Build the extension from source**
+
+```bash
+npm run build:extension      # → dist-extension/, then Load unpacked as above
+```
 
 ## 🧩 Options
 
@@ -127,6 +146,7 @@ src/
 ├── species.ts     # Fish species: schooling weights, depth by day and night
 ├── engine.ts      # Canvas loop, resize, pointer input, reduced motion
 └── math.ts        # Noise, ocean current field, helpers
+extension/         # Chrome extension: manifest + new-tab page
 check.ts           # Headless behaviour check
 assets/            # Demo GIF
 ```

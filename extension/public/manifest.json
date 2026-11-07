@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "ASCII Deepsea",
+  "version": "1.0.0",
+  "description": "A living deep-sea aquarium drawn in ASCII on every new tab: whales, orcas, sharks, octopus, jellyfish and fish schools.",
+  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "homepage_url": "https://github.com/inspiriflow/ascii-deepsea"
+}

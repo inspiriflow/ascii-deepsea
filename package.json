@@ -9,9 +9,11 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "check": "esbuild check.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/check.mjs && node node_modules/.cache/check.mjs"
+    "check": "esbuild check.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/check.mjs && node node_modules/.cache/check.mjs",
+    "build:extension": "vite build -c vite.extension.config.ts"
   },
   "devDependencies": {
+    "@fontsource/geist-mono": "^5.3.0",
     "typescript": "^5.6.0",
     "vite": "^6.0.0"
   },
